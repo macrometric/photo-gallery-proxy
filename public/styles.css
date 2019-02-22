@@ -1,0 +1,36 @@
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.component {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 3;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 55% 5% 40%;
+  background-color: darkseagreen;
+}
+
+.gallery {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: lightsalmon;
+}
+
+.details {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: blueviolet;
+}
+
+.similar {
+  grid-row: 2;
+}
+
+.reviews {
+  grid-row: 3;
+}

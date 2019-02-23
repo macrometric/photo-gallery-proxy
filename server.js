@@ -28,6 +28,23 @@ app.get("/products/:id", (req, res) => {
 });
 
 // Product Description
+app.get("/productinfo/:id", (req, res) => {
+  // console.log("hi i am req param", req.params);
+  axios
+    .get(
+      `http://ec2-13-59-174-32.us-east-2.compute.amazonaws.com:3030/productinfo/${
+        req.params.id
+      }`
+    )
+    .then(product => {
+      // console.log("product.data", product.data);
+      res.json(product.data);
+    })
+    .catch(err => {
+      console.log("Error with GET request in proxy");
+      res.sendStatus(400);
+    });
+});
 
 // Similar Items
 app.get("/getFiveRandom", (req, res) => {

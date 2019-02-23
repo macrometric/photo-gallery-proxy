@@ -1,28 +1,40 @@
 .header {
+  grid-column: 2;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  color: #f96302;
+  display: inline;
 }
 
 .product {
   display: grid;
   grid-template-columns: 55% 5% 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.logo-image {
+  grid-row: 1;
+  grid-column: 1;
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 35%;
 }
 
 .gallery {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
 }
 
 .details {
   grid-column: 3;
-  grid-row: 1;
-  background-color: blueviolet;
-}
-
-.similar {
   grid-row: 2;
 }
 
-.reviews {
+.similar {
   grid-row: 3;
+}
+
+.reviews {
+  grid-row: 4;
 }

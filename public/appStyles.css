@@ -49,6 +49,13 @@ p {
 .imageContainer {
   width: 100%;
   object-fit: contain;
-  max-height: 500px;
   padding-top: 20px;
+  height: 500px;
+}
+
+.thumbnail:hover {
+  border-bottom: solid 5px #f96302;
+  padding-bottom: 3px;
+  margin-bottom: -8px;
+  transition: 0.2s ease-in-out;
 }
